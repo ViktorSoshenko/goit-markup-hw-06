@@ -869,7 +869,7 @@ ul {
 }
 .label-check {
   position: relative;
-  display: inline-block;
+  display: block;
   cursor: pointer;
 
   color: #757575;
@@ -886,14 +886,14 @@ ul {
   letter-spacing: 0.03em;
 }
 .checkbox {
-  position: absolute;
-  appearance: none;
   cursor: pointer;
-
-  width: 16px;
-  height: 15px;
-  background-size: contain;
-  background-origin: border-box;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
 }
 .check-icon {
   display: inline-block;
